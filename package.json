@@ -1,0 +1,26 @@
+{
+  "name": "stopwords-ga",
+  "version": "0.1.0",
+  "author": "Gene Diaz <genediazjr@gmail.com> (http://genediazjr.com)",
+  "description": "The most comprehensive collection of stopwords for the irish language.",
+  "keywords": [
+    "irish",
+    "stopwords",
+    "stop words"
+  ],
+  "license": "MIT",
+  "repository": "git://github.com/stopwords-iso/stopwords-ga",
+  "bugs": "https://github.com/stopwords-iso/stopwords-ga/issues",
+  "main": "stopwords-ga.json",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "stopwords-collator -s raw -o stopwords-ga",
+    "test": "npm run build && jsonlint stopwords-ga.json -q"
+  },
+  "devDependencies": {
+    "stopwords-collator": "*",
+    "jsonlint": "1.6.x"
+  }
+}
